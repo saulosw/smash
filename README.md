@@ -19,7 +19,7 @@ Projeto 7 - 6º CCOMP
 
 # 📄 Descrição
 
-O **Smash** transforma uma parede comum em uma superfície de treino instrumentada para tênis. Seis alvos de MDF, dispostos em uma matriz 3×2 (três colunas, duas linhas), têm uma pastilha piezoelétrica colada na parte de trás. Quando a bola acerta um alvo, o sistema identifica qual foi atingido, mede a intensidade do impacto e registra o evento — sem câmera e sem visão computacional: o sinal é o próprio impacto físico, convertido em tensão pelo piezo.
+O **Smash** transforma uma parede comum em uma superfície de treino instrumentada para tênis. Seis alvos de MDF, dispostos em uma matriz 3×2 (três colunas, duas linhas), têm uma pastilha piezoelétrica colada na parte de trás. Quando a bola acerta um alvo, o sistema identifica qual foi atingido, mede a intensidade do impacto e registra o evento — sem visão computacional: o sinal é o próprio impacto físico, convertido em tensão pelo piezo. A webcam do notebook só grava os highlights dos níveis concluídos.
 
 Um microcontrolador **ESP32** varre continuamente os seis sensores, cada um ligado direto num pino analógico, aplica limiar e debounce por canal e decide, por comparação de pico, qual alvo foi realmente atingido. O evento chega em tempo real ao aplicativo mobile via **WebSocket**, para uma sessão de treino guiada por níveis e desafios, e o app envia cada sessão terminada ao backend por **HTTP**, para histórico, ranking e estatísticas.
 

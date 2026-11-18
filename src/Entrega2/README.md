@@ -64,6 +64,8 @@ Para parar tudo: `Ctrl+C`.
 | `npm run web` | só o site/dashboard, em http://localhost:5173 (a API vai por `/api`) |
 | `npm run emulator` | só abre o emulador e espera o boot |
 | `npm run wall` | emulador da parede: servidor WebSocket na porta 8181, com o protocolo do firmware |
+| `npm run wall:map` | conecta na parede e mostra qual placa foi atingida, para montar cada uma no lugar certo |
+| `npm run apresentacao` | backend + site + Metro já apontando para a parede na rede (`-- emulador` ou `-- simulador` sem ela) |
 | `npm run db:migrate` | aplica as migrations pendentes |
 | `npm run typecheck` | TypeScript dos dois projetos |
 | `npm run lint` | ESLint dos dois projetos |
@@ -95,7 +97,7 @@ mesma conta do app e muda o menu conforme o papel:
 | Papel | O que vê |
 | --- | --- |
 | Visitante | catálogo público de treinos, detalhes e histórico de versões |
-| Jogador | histórico por período e por treino (volume, precisão, consistência, tempo, progressão), sessão batida a batida, perfil do praticante |
+| Jogador | histórico por período e por treino (volume, precisão, consistência, tempo, progressão), sessão batida a batida, perfil do praticante, câmera e highlights |
 | Treinador | estúdio: criar e editar treinos, simular, enviar para revisão, arquivar e analisar as sessões de cada treino |
 | Administrador | tudo acima, mais revisão e publicação, usuários e papéis, todas as sessões, dispositivos e auditoria |
 
