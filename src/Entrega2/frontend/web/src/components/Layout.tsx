@@ -17,6 +17,7 @@ const NAV: { title: string; items: NavItem[] }[] = [
     items: [
       { to: '/', label: 'Catálogo de treinos', end: true },
       { to: '/historico', label: 'Meu histórico', roles: ['player', 'coach', 'admin'] },
+      { to: '/camera', label: 'Câmera e highlights', roles: ['player', 'coach', 'admin'] },
       { to: '/perfil', label: 'Perfil do praticante', roles: ['player', 'coach', 'admin'] },
     ],
   },

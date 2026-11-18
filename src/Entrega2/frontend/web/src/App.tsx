@@ -11,6 +11,7 @@ import {
   AdminUsersPage,
 } from './pages/admin/AdminPages';
 import { SignInPage, SignUpPage } from './pages/AuthPages';
+import { CameraPage } from './pages/CameraPage';
 import { CatalogPage } from './pages/CatalogPage';
 import { HistoryPage } from './pages/HistoryPage';
 import { ProfilePage } from './pages/ProfilePage';
@@ -45,6 +46,7 @@ export function App() {
             <Route path="entrar" element={<SignInPage />} />
             <Route path="cadastro" element={<SignUpPage />} />
             <Route path="historico" element={<RequireRole roles={[...ANY]}><HistoryPage /></RequireRole>} />
+            <Route path="camera" element={<RequireRole roles={[...ANY]}><CameraPage /></RequireRole>} />
             <Route path="perfil" element={<RequireRole roles={[...ANY]}><ProfilePage /></RequireRole>} />
             <Route path="sessoes/:id" element={<RequireRole roles={[...ANY]}><SessionDetailPage /></RequireRole>} />
             <Route path="estudio" element={<RequireRole roles={[...AUTHORS]}><StudioListPage /></RequireRole>} />
