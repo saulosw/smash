@@ -8,6 +8,8 @@
     "db:migrate": "npm --prefix backend run db:migrate",
     "emulator": "bash scripts/emulator.sh",
     "wall": "node scripts/wall-emulator.mjs",
+    "wall:map": "node scripts/wall-map.mjs",
+    "apresentacao": "bash scripts/apresentacao.sh",
     "security:test": "node scripts/security-tests.mjs",
     "backend": "npm --prefix backend run start:dev",
     "app": "npm --prefix frontend start",

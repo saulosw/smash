@@ -151,3 +151,5 @@ secrets.h
 .pio/
 *.bin
 *.elf
+
+*.local.md
